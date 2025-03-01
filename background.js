@@ -21,7 +21,7 @@ function copyToClipboard() {
     .then(() => {
       // Feedback visual para o usuário
       const notification = document.createElement('div');
-      notification.textContent = 'Link copiado em formato Markdown!';
+      notification.textContent = `Link \"${title}\" copiado em formato Markdown!`;
       notification.style.cssText = `
         position: fixed;
         top: 20px;

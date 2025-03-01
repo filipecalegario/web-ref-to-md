@@ -11,11 +11,31 @@ Uma extensão para o Google Chrome que facilita a coleta de referências da Web,
 
 ## Como instalar
 
+### Método 1: Instalação para desenvolvedores (a partir do código-fonte)
+
 1. Clone este repositório ou baixe os arquivos
 2. Abra o Chrome e navegue até `chrome://extensions/`
 3. Ative o "Modo do desenvolvedor" no canto superior direito
 4. Clique em "Carregar sem compactação" e selecione a pasta deste projeto
 5. A extensão será adicionada ao Chrome
+
+### Método 2: Instalação a partir do arquivo ZIP
+
+1. Baixe o arquivo `web-ref-to-md.zip`
+2. Extraia o conteúdo para uma pasta em seu computador
+3. Abra o Chrome e navegue até `chrome://extensions/`
+4. Ative o "Modo do desenvolvedor" no canto superior direito
+5. Clique em "Carregar sem compactação" e selecione a pasta onde você extraiu os arquivos
+6. A extensão será adicionada ao Chrome
+
+### Método 3: Instalação a partir do arquivo .crx (se disponível)
+
+1. Baixe o arquivo .crx
+2. Abra o Chrome e navegue até `chrome://extensions/`
+3. Ative o "Modo do desenvolvedor" no canto superior direito
+4. Arraste e solte o arquivo .crx na página de extensões
+5. Clique em "Adicionar extensão" quando solicitado
+6. A extensão será adicionada ao Chrome
 
 ## Como usar
 
