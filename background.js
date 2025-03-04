@@ -12,13 +12,16 @@ function copyToClipboard() {
   // Obtém o título e URL da página atual
   const title = document.title;
   const url = window.location.href;
-  
+
   // Obtém o texto selecionado na página
   const selectedText = window.getSelection().toString().trim();
-  
+
   // Formata como Markdown: [Título](URL): Texto Selecionado
-  const markdownLink = `[${title}](${url}): ${selectedText}`;
-  
+  let markdownLink = `[${title}](${url})`;
+  if (selectedText.length > 0) {
+    markdownLink = `[${title}](${url}): ${selectedText}`;
+  }
+
   // Copia para a área de transferência
   navigator.clipboard.writeText(markdownLink)
     .then(() => {
@@ -38,9 +41,9 @@ function copyToClipboard() {
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         font-family: Arial, sans-serif;
       `;
-      
+
       document.body.appendChild(notification);
-      
+
       // Remove a notificação após 3 segundos
       setTimeout(() => {
         notification.style.opacity = '0';
