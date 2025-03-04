@@ -13,8 +13,11 @@ function copyToClipboard() {
   const title = document.title;
   const url = window.location.href;
   
-  // Formata como Markdown: [Título](URL)
-  const markdownLink = `[${title}](${url})`;
+  // Obtém o texto selecionado na página
+  const selectedText = window.getSelection().toString().trim();
+  
+  // Formata como Markdown: [Título](URL): Texto Selecionado
+  const markdownLink = `[${title}](${url}): ${selectedText}`;
   
   // Copia para a área de transferência
   navigator.clipboard.writeText(markdownLink)
